@@ -6,21 +6,21 @@ import CreditoContext from './context' ;
 
 export default function  SliderGenerico(props) {
  const {montoTotal,plazo} = useContext(CreditoContext);
- 
- const marks = {
+
+ /*const marks = {
    0:<strong>{5000}</strong>,
    100:<strong>{50000}</strong>
- }
+ }*/
 
  const onSliderChange = value => {
   props.onChangeMonto(value);
-} 
+}
 
   return (
     <div>
-        <Slider 
+        <Slider
           className="slider"
-          value={props.id=="idMonto"?montoTotal:plazo}	
+          value={props.id==="idMonto"?montoTotal:plazo}
           onChange={onSliderChange}
           min={props.min}
           max={props.max}

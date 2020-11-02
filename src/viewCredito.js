@@ -1,4 +1,4 @@
-import React, { useState,useContext } from 'react';
+import React, { useContext } from 'react';
 import Monto from './Monto';
 import Button from './Button';
 import CreditoContext from './context' ;
@@ -9,15 +9,15 @@ export default function ViewCredito() {
   return (
     <div className="viewCredito">
         <div className="baseCredito">
-           <strong><h1 className="titleCredito">Simulá tu crédito</h1></strong> 
+           <h1 className="titleCredito"><strong>Simulá tu crédito</strong></h1> 
             <Monto id={"idMonto"}  nombre="MONTO TOTAL"  min={5000} max={50000}/>
             <Monto  id={"idPlazo"}  nombre="PLAZO"  min={3} max={24}/>
            <div className="content">
                 <div className="cuotaFija">
-                   <p><strong>CUOTA FIJA POR MES</strong></p><nav className="cuotaFijaTotal">$ {(montoTotal/plazo).toFixed(2)}</nav>
+                   <h3><strong>CUOTA FIJA POR MES</strong></h3><div className="cuotaFijaTotal">{"$"+(montoTotal/plazo).toFixed(2)}</div>
                 </div>
                 <div className="btn-block">
-                    <Button class={"btn-credito"} contenido={"OBTENE CREDITO"} /><Button class={"btn-detalles"} contenido={"VER DETALLES DE CUOTAS"}/>
+                    <Button class={"btn btn-primary"} contenido={"Obtené Crédito"} /><Button class={"btn btn-secondary"} contenido={"Ver detalle de cuotas"}/>
                 </div>
            </div>
         </div>

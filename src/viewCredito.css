@@ -1,12 +1,13 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+
 .viewCredito{
-    background: #084F85;
+    background: linear-gradient(180deg, rgba(8,79,133,1) 53%, rgba(0,59,103,1) 95%);
     width:35rem;
-    height:31rem ;
     text-align: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
+    padding: 30px ;
 }
 
 h1{
@@ -15,8 +16,14 @@ h1{
     font-weight:bold;
     font-size: 30px;
 }
-p{font-family: 'Montserrat', sans-serif;color:white}
+p{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
 
+.titleCredito{
+    font-weight :700;
+}
 .baseCredito{
     background: #003B67;
     padding: 20px;
@@ -30,14 +37,20 @@ p{font-family: 'Montserrat', sans-serif;color:white}
 .cuotaFija{
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
+    justify-content: stretch;
 }
 .cuotaFijaTotal{
     color: white;
     font-weight:bold;
     font-size: 30px;
-    margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
+    width: 25%;
+}
+
+h3{
+    margin-left:auto ;
+    margin-right:auto ;
 }
 
 .monto{
@@ -67,27 +80,33 @@ input{
     width: 90%;
     margin-left: 25px;
 }
-
-.btn-credito{
-    background: #70C895;
+.btn-block {
+    display: flex;
+    justify-content: stretch;
+}
+.btn {
     color: white;
-    padding: 15px;
-    font-size: medium;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
     margin: 5px;
-    width: 65%;
-    height: 60px;
-    height: 100%;
-    box-shadow: 0 0px 0px 0px 
+    padding: 5px 15px;
+    border: none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.btn-primary{
+    background: #70C895;
+    font-size: medium;
+    width: calc(65% - 10px);
 
 }
-.btn-detalles{
-    height: 100%;
+.btn-secondary{
     background: #084F85;
-    color: white;
     font-size: small;
-    width: 30%;
-    outline:none;
-    padding-top: 17px;
+    width: calc(35% - 10px);
+    
 }
 
 .content{

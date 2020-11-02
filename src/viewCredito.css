@@ -1,0 +1,107 @@
+.viewCredito{
+    background: #084F85;
+    width:35rem;
+    height:31rem ;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-weight:bold;
+    font-size: 30px;
+}
+p{font-family: 'Montserrat', sans-serif;color:white}
+
+.baseCredito{
+    background: #003B67;
+    padding: 20px;
+    margin: 20px;
+}
+
+.nameMontoTotal{
+    display: flex;
+    justify-content: space-between;
+}
+.cuotaFija{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.cuotaFijaTotal{
+    color: white;
+    font-weight:bold;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.monto{
+    margin:30px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.montoContent{
+    margin:0px auto;
+    align-content: center;
+}
+
+input{
+    background-color: #003B67;
+    color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.slider{
+    width: 90%;
+    margin-left: 25px;
+}
+
+.btn-credito{
+    background: #70C895;
+    color: white;
+    padding: 15px;
+    font-size: medium;
+    margin: 5px;
+    width: 65%;
+    height: 60px;
+    height: 100%;
+    box-shadow: 0 0px 0px 0px 
+
+}
+.btn-detalles{
+    height: 100%;
+    background: #084F85;
+    color: white;
+    font-size: small;
+    width: 30%;
+    outline:none;
+    padding-top: 17px;
+}
+
+.content{
+    background: #01375e;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    display: block;
+}
+
+.rangos{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Montserrat', sans-serif
+}
